@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsCalculator", "Exceptions\ExceptionsCalculator.csproj", "{D52F4765-4D3A-49EE-8475-D30F76AF9243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportManager", "TransportManager\TransportManager.csproj", "{EDFF0C6C-18AB-48CA-BAF1-E47EFAE2DD01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D52F4765-4D3A-49EE-8475-D30F76AF9243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52F4765-4D3A-49EE-8475-D30F76AF9243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52F4765-4D3A-49EE-8475-D30F76AF9243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52F4765-4D3A-49EE-8475-D30F76AF9243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDFF0C6C-18AB-48CA-BAF1-E47EFAE2DD01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFF0C6C-18AB-48CA-BAF1-E47EFAE2DD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFF0C6C-18AB-48CA-BAF1-E47EFAE2DD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFF0C6C-18AB-48CA-BAF1-E47EFAE2DD01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83B15A3F-99A2-483B-BCE3-F3148A8AE9E2}
+	EndGlobalSection
+EndGlobal
