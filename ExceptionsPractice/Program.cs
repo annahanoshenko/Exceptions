@@ -89,6 +89,34 @@ namespace ExceptionsPractice
                 Console.WriteLine($"Caught a general exception: {ex.Message}");
             }
 
+            bool isDebugMode = true;
+
+            try
+            {
+                int sec = 0;
+                int result = 10 / sec;
+            }
+            catch (DivideByZeroException ex) when (isDebugMode)
+            {
+                Console.WriteLine("Debug mode: Divide by zero detected.");
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Production mode: Please contact support.");
+            }
+
+            try
+            {
+                throw new ArgumentException("Parameter cannot be null or empty", "parameterName");
+            }
+            catch(ArgumentException ex) when (ex.ParamName == "parameterName")
+            {
+                Console.WriteLine("Caught an ArgumentException for 'parameterName'.");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Caught an ArgumentException for another parameter.");
+            }
         }
     }
 }

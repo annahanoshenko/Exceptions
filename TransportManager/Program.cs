@@ -12,19 +12,8 @@ namespace TransportManager
     {
         static void Main(string[] args)
         {
-            try
-            {
-                throw new InvalidOperationException("Custom message");
-            }
-            catch (InvalidOperationException ex) when (ex.Message.Contains("Custom"))
-            {
-                Console.WriteLine("Caught specific InvalidOperationException with 'Custom' in the message.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Caught a general exception: {ex.Message}");
-            }
-                Console.ReadKey();
+           
+            Console.ReadKey();
 
         }
     }
