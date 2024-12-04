@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -116,6 +117,24 @@ namespace ExceptionsPractice
             catch(Exception ex)
             {
                 Console.WriteLine("Caught an ArgumentException for another parameter.");
+            }
+
+            try
+            {
+                Console.Write("Enter name: ");
+                string name = Console.ReadLine();
+                if (name == null || name.Length < 2)
+                {
+                    throw new Exception("Name length less than 2 symbols");
+                }
+                else
+                {
+                    Console.WriteLine($"Your name: {name}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
             }
         }
     }
